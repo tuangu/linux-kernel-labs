@@ -369,6 +369,8 @@ While the following sequence deletes and unregisters them:
           example, after the initialization above, ``my_fops.mmap`` will
           be NULL.
 
+.. _access_to_process_address_space:
+
 Access to the address space of the process
 ==========================================
 
@@ -477,7 +479,7 @@ Read and write
 ==============
 
 The read and write operations are reaching the device driver as a
-result of a userpsace program calling the read of write system calls:
+result of a userspace program calling the read or write system calls:
 
 .. code-block:: c
 
